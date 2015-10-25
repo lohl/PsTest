@@ -15,5 +15,9 @@ Included in this project is an ASP.net MVC project
 
  The ranges on the Grav fields should be validated. 
 
- 3. Ensure that records on the index page are sorted in accordance with depth order
- 4. Add a confirmation message to assure users that when they enter a new record it has been saved
+
+3. Ensure that records on the index page are sorted in accordance with depth order
+
+4. Add a confirmation message to assure users that when they enter a new record it has been saved
+
+Code should be submitted back as a PR. Please don't squash your commits. 
