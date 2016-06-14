@@ -9,7 +9,8 @@ Included in this project is an ASP.net MVC project
  - GravX
  - GravY
  - GravZ
- And also a total field which is calcualted using the formula. 
+ 
+And also a total field which is calcualted using the formula. 
 
  ```GravTotal = (GravX + GravY)/GravZ```
 
