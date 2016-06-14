@@ -21,4 +21,4 @@ And also a total field which is calcualted using the formula.
 
 4. Add a confirmation message to assure users that when they enter a new record it has been saved
 
-Code should be submitted back as a Pull Request from the dev branch. Please don't squash your commits. 
+Code should be submitted back as a Pull Request from the Dev branch. Please don't squash your commits. 
