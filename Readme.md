@@ -21,4 +21,4 @@ And also a total field which is calcualted using the formula.
 
 4. Add a confirmation message to assure users that when they enter a new record it has been saved
 
-Code should be submitted back by create your own repository in GIT Hub that we can pull from. Please don't squash your commits, and do not commit back to this repository. 
+Code should be submitted back by creating your own repository in GIT Hub that we can pull from. Please don't squash your commits.  Please do not commit back to this repository. 
