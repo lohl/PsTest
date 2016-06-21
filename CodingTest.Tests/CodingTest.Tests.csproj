@@ -98,9 +98,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\ReadingControllerTest.cs" />
+    <Compile Include="Models\ReadingGravTests.cs" />
     <Compile Include="Models\ReadingTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Controllers\HomeControllerTest.cs" />
+    <Compile Include="Repositories\RepositoryBaseTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App.config" />

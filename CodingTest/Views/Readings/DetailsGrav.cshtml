@@ -1,0 +1,58 @@
+﻿@model CodingTest.Models.ReadingGrav
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Reading</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Depth)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Depth)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GravX)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GravX)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GravY)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GravY)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GravZ)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GravZ)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TotalGrav)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TotalGrav)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id, readingType = Model.GetType().Name}) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

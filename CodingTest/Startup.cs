@@ -10,5 +10,6 @@ namespace CodingTest
         {
             ConfigureAuth(app);
         }
+
     }
 }

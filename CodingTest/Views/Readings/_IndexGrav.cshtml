@@ -1,0 +1,52 @@
+﻿@using CodingTest.Models
+@model IEnumerable<CodingTest.Models.ReadingGrav>
+<p>
+    @Html.ActionLink("Create New Grav", "Create", new { readingType = "ReadingGrav"})
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Depth)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GravX)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GravY)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GravZ)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TotalGrav)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Depth)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GravX)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GravY)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GravZ)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TotalGrav)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new {id = item.Id, readingType = "ReadingGrav" }) |
+                @Html.ActionLink("Details", "Details", new {id = item.Id, readingType = "ReadingGrav" }) |
+                @Html.ActionLink("Delete", "Delete", new {id = item.Id, readingType = "ReadingGrav" })
+            </td>
+        </tr>
+    }
+
+</table>

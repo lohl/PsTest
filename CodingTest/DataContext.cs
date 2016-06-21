@@ -10,5 +10,7 @@ namespace CodingTest
     public class DataContext : DbContext
     {
         public DbSet<Reading> Readings { get; set; }
+        public DbSet<ReadingGrav> ReadingsGrav { get; set; }
+
     }
 }

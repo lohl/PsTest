@@ -6,46 +6,25 @@
 
 <h2>Index</h2>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Depth)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.MagX)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.MagY)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.MaxZ)
-        </th>
-        <th></th>
-    </tr>
+@{ Html.RenderAction("IndexMag"); }
+@{ Html.RenderAction("IndexGrav"); }
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Depth)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.MagX)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.MagY)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.MaxZ)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
-            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
-        </td>
-    </tr>
+<div id="dialog-confirm" title="Confirmation Dialog" style="display:none">Messages... </div>
+
+
+@section Scripts {
+@if (ViewBag.Confirmation != null)
+{
+    <script>
+
+        $(document)
+            .ready(function() {
+                $(document).ready(function () {
+                    alert('@ViewBag.Confirmation');
+                });
+
+            });
+
+    </script>
 }
-
-</table>
+}
